@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="appConjuntosIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Conjunto A: 9,3,4..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gdn-w6-Zk1">
+                                <rect key="frame" x="16" y="110" width="361" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="Ubg-63-ykb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textoSetAChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="Gg5-Wq-cMh"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Or7-ye-8w9">
+                                <rect key="frame" x="154" y="171" width="85" height="35"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="5NK-aE-8lg"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="SET A &gt;">
+                                    <color key="baseForegroundColor" red="0.090977899730205536" green="0.70121592283248901" blue="0.15951505303382874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="botonAsignarSetA:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2iE-GH-5lw"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Conjunto B: 5,6,7..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G7u-mg-hFS">
+                                <rect key="frame" x="16" y="243" width="361" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="Hen-U4-kqv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textoSetBChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="qow-lk-YtY"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iix-p3-DUP">
+                                <rect key="frame" x="154" y="304" width="85" height="35"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="2Fe-ib-P3s"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="SET B &gt;">
+                                    <color key="baseForegroundColor" red="0.090064026415348053" green="0.66350823640823364" blue="0.40088510513305664" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="botonAsignarSetB:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0bA-Mj-CtQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pba-7T-6wO">
+                                <rect key="frame" x="16" y="517" width="361" height="200"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="SJ7-jS-hr8">
+                                <rect key="frame" x="0.0" y="408" width="393" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="S4i-cX-skD"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="A U B"/>
+                                    <segment title="A - B"/>
+                                    <segment title="A \ B"/>
+                                    <segment title="A △ B"/>
+                                    <segment title="A ⊆ B"/>
+                                    <segment title="A ⊃ B"/>
+                                    <segment title="A x B"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" systemColor="systemBlueColor"/>
+                                <connections>
+                                    <action selector="SelectorOperaciones:" destination="BYZ-38-t0r" eventType="valueChanged" id="8dS-Jx-sfJ"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SELECTOR DE OPERACION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vTT-9D-gxA">
+                                <rect key="frame" x="92" y="379" width="209" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Jv4-cS-mNn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="RESULTADO:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OcA-vo-EbH">
+                                <rect key="frame" x="146" y="488" width="100" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="qJf-sS-NaP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OPERACIONES DE CONJUNTOS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kdf-db-ReD">
+                                <rect key="frame" x="0.0" y="59" width="393" height="32"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="0Bx-s3-sA3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" red="0.97492235898971558" green="0.94591706991195679" blue="0.021591316908597946" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pba-7T-6wO" secondAttribute="bottom" constant="101" id="2gb-Tg-RIE"/>
+                            <constraint firstItem="gdn-w6-Zk1" firstAttribute="centerX" secondItem="Or7-ye-8w9" secondAttribute="centerX" id="3Zy-z1-Z6j"/>
+                            <constraint firstItem="vTT-9D-gxA" firstAttribute="top" secondItem="Iix-p3-DUP" secondAttribute="bottom" constant="40" id="7kL-yr-rD5"/>
+                            <constraint firstItem="G7u-mg-hFS" firstAttribute="top" secondItem="Or7-ye-8w9" secondAttribute="bottom" constant="37" id="9QU-Kv-OOZ"/>
+                            <constraint firstItem="G7u-mg-hFS" firstAttribute="trailing" secondItem="pba-7T-6wO" secondAttribute="trailing" id="AtQ-NH-C2X"/>
+                            <constraint firstItem="Kdf-db-ReD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DW6-J9-yA4"/>
+                            <constraint firstItem="Kdf-db-ReD" firstAttribute="centerX" secondItem="gdn-w6-Zk1" secondAttribute="centerX" id="JPl-kJ-ZmI"/>
+                            <constraint firstItem="Kdf-db-ReD" firstAttribute="leading" secondItem="SJ7-jS-hr8" secondAttribute="leading" id="K5b-dL-6Zg"/>
+                            <constraint firstItem="gdn-w6-Zk1" firstAttribute="top" secondItem="Kdf-db-ReD" secondAttribute="bottom" constant="19" id="Mts-q3-taM"/>
+                            <constraint firstItem="Kdf-db-ReD" firstAttribute="trailing" secondItem="SJ7-jS-hr8" secondAttribute="trailing" id="Nf3-fM-bdN"/>
+                            <constraint firstItem="Iix-p3-DUP" firstAttribute="top" secondItem="G7u-mg-hFS" secondAttribute="bottom" constant="27" id="SIH-0m-Xte"/>
+                            <constraint firstItem="gdn-w6-Zk1" firstAttribute="leading" secondItem="G7u-mg-hFS" secondAttribute="leading" id="SpL-2N-gTK"/>
+                            <constraint firstItem="Or7-ye-8w9" firstAttribute="top" secondItem="gdn-w6-Zk1" secondAttribute="bottom" constant="27" id="TzM-Fb-AT1"/>
+                            <constraint firstItem="SJ7-jS-hr8" firstAttribute="top" secondItem="vTT-9D-gxA" secondAttribute="bottom" constant="8" id="WDm-zz-UfR"/>
+                            <constraint firstItem="Kdf-db-ReD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="a7g-3n-HFc"/>
+                            <constraint firstItem="gdn-w6-Zk1" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="aTZ-ZY-MVq"/>
+                            <constraint firstItem="OcA-vo-EbH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="146" id="baj-ju-I4Q"/>
+                            <constraint firstItem="gdn-w6-Zk1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ecC-NO-Uuz"/>
+                            <constraint firstItem="gdn-w6-Zk1" firstAttribute="trailing" secondItem="G7u-mg-hFS" secondAttribute="trailing" id="f6v-sO-osL"/>
+                            <constraint firstItem="SJ7-jS-hr8" firstAttribute="centerX" secondItem="OcA-vo-EbH" secondAttribute="centerX" id="hb5-4l-deW"/>
+                            <constraint firstItem="vTT-9D-gxA" firstAttribute="centerX" secondItem="SJ7-jS-hr8" secondAttribute="centerX" id="ibl-hy-LXc"/>
+                            <constraint firstItem="pba-7T-6wO" firstAttribute="top" secondItem="OcA-vo-EbH" secondAttribute="bottom" constant="8" id="rWy-Uo-PRp"/>
+                            <constraint firstItem="OcA-vo-EbH" firstAttribute="top" secondItem="SJ7-jS-hr8" secondAttribute="bottom" constant="49" id="tSU-WI-yst"/>
+                            <constraint firstItem="Or7-ye-8w9" firstAttribute="leading" secondItem="Iix-p3-DUP" secondAttribute="leading" id="xXL-Yc-Uqc"/>
+                            <constraint firstItem="G7u-mg-hFS" firstAttribute="leading" secondItem="pba-7T-6wO" secondAttribute="leading" id="zpb-5p-8J8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ControlOperaciones" destination="SJ7-jS-hr8" id="GMN-v4-kGq"/>
+                        <outlet property="botonAsignarSetA" destination="Or7-ye-8w9" id="E7j-Ec-ExU"/>
+                        <outlet property="botonAsignarSetB" destination="Iix-p3-DUP" id="sU9-h4-Pof"/>
+                        <outlet property="labelResultado" destination="pba-7T-6wO" id="vYx-82-iK1"/>
+                        <outlet property="textoConjuntoA" destination="gdn-w6-Zk1" id="67w-2L-cUL"/>
+                        <outlet property="textoConjuntoB" destination="G7u-mg-hFS" id="fuL-ye-V3f"/>
+                        <outlet property="textoResultado" destination="pba-7T-6wO" id="hdT-TM-vRf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
